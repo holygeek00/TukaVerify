@@ -6,7 +6,7 @@ module.exports = {
     watch: true,
     env: {
       NODE_ENV: 'development',
-      PORT: 3000 // default port for create-react-app
+      PORT: 5000 // default port for create-react-app
     },
     env_production: {
       NODE_ENV: 'production',
