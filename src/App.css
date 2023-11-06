@@ -1,16 +1,6 @@
+/* 基本样式 */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,15 +14,52 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+  font-size: 4rem; /* 大标题 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* 表单样式 */
+form {
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* 错误信息样式 */
+.error {
+  color: red;
+  margin-top: 20px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .App-title {
+    font-size: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  input[type="text"], button {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-title {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"], button {
+    font-size: 0.7rem;
+    padding: 6px;
   }
 }
