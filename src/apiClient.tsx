@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8000'; // Replace with your actual base URL
+const BASE_URL = 'http://localhost:8999'; // Replace with your actual base URL
 
 export const getWeChatUser = async (wechatId: string) => {
   try {
