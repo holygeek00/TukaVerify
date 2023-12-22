@@ -28,7 +28,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">兔咔员工微信号查询网站</h1>
+        <h1 className="App-title">兔咔客服微信号查询网站</h1>
         <form onSubmit={handleSubmit}>
           <label>
             WeChat ID:
