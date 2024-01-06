@@ -17,9 +17,9 @@ const App: React.FC = () => {
     setError('');
     try {
       const userData = await getWeChatUser(wechatId);
-      setUser('存在此微信ID');
+      setUser('此微信是本公司工作微信');
     } catch (err) {
-      setUser('无法找到该微信ID');
+      setUser('此微信不是本公司微信，请注意！');
       setError('');
       
     }
